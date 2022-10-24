@@ -6,3 +6,5 @@ print(data)
 
 #Primero entendemos los formatos de los datos con los que contamos 
 data.info()
+print(data)
+
