@@ -31,6 +31,8 @@ data['plot']= data['plot'].str.replace('way','').astype(np.object)
 data['plot']= data['plot'].str.replace('find','').astype(np.object)
 data['plot']= data['plot'].str.replace('Two','').astype(np.object)
 data['plot']= data['plot'].str.replace('two','').astype(np.object)
+data['plot']= data['plot'].str.replace('summary','').astype(np.object)
+
 
 
 #Create a Word Cloud 
