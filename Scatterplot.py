@@ -1,3 +1,4 @@
+from asyncio.windows_events import NULL
 import seaborn as sns
 import numpy as np
 import pandas as pd
@@ -16,14 +17,14 @@ data['votes'] = data['votes'].round(2)
 data.loc[:,['votes']]
 
 data.drop(['Unnamed: 0', 'url'], axis=1, inplace=True)
+
+
 data.head()
 
 data.info()
 
 data['votes'] = data['votes'].astype(float)
-print(data['votes'])
 
 
-
-grafico3 = px.scatter(data,x='rating', y = 'votes', color= "votes",size='votes',  hover_name='name')
+grafico3 = px.scatter(data,x='rating', y = 'votes', color= "votes",  hover_name='name')
 grafico3.show()
