@@ -10,7 +10,7 @@ import altair as alt
 data = pd.read_csv('https://raw.githubusercontent.com/vpiombi/pythonclase/main/imdb-videogames.csv')
 
 
-data['votes']= data['votes'].str.replace(',','.').astype(float)
+data['votes']= data['votes'].str.replace(',','').astype(float)
 data['votes'] = data['votes'].round(2)
 
 
