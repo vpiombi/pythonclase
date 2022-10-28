@@ -19,6 +19,13 @@ data.drop(['Unnamed: 0', 'url'], axis=1, inplace=True)
 data.head()
 
 
+#Grafico con año y genero
+
+
 genero = data[['Action', 'Adventure', 'Comedy', 'Crime', 'Family', 'Fantasy', 'Mystery', 'Sci-Fi', 'Thriller']]
 genero
 
+
+grafico = px.pie(genero, values=genero, title='Cantidad de juegos publicados',
+             color_discrete_sequence=px.colors.qualitative.Plotly)
+grafico.show()

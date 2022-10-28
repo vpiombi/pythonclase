@@ -19,6 +19,17 @@ data.drop(['Unnamed: 0', 'url'], axis=1, inplace=True)
 data.head()
 
 
+#Grafico haciendo la relacion entre generos
+
 genero = data[['Action', 'Adventure', 'Comedy', 'Crime', 'Family', 'Fantasy', 'Mystery', 'Sci-Fi', 'Thriller']]
 genero
 
+
+genres = pd.DataFrame()
+for col in genero.columns:
+    genres[col] = genero[genero[col]==True].sum()
+    genres[col] /= genres[col].max()
+    
+fig = plt.figure(figsize=(16,6))
+sns.heatmap(genres, cmap="RdPu", annot=True)
+plt.show()
