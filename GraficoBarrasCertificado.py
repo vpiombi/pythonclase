@@ -1,3 +1,4 @@
+from asyncio.windows_events import NULL
 import seaborn as sns
 import numpy as np
 import pandas as pd
@@ -16,14 +17,26 @@ data['votes'] = data['votes'].round(2)
 data.loc[:,['votes']]
 
 data.drop(['Unnamed: 0', 'url'], axis=1, inplace=True)
+
+
+
+
 data.head()
 
 
 #Grafico con año y genero
 
+
+
 generoxcertificado = data[['certificate', 'Action', 'Adventure', 'Comedy', 'Crime', 'Family', 'Fantasy',
                     'Mystery', 'Sci-Fi', 'Thriller']].groupby('certificate').sum()
 generoxcertificado
+
+
+generoxcertificado.drop
+
+
+
 
 
 grafico = px.bar(generoxcertificado, x=generoxcertificado.index, y=generoxcertificado.columns, title='Cantidad de juegos por certificado',

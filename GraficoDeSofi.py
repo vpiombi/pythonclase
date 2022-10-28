@@ -1,3 +1,4 @@
+from asyncio.windows_events import NULL
 import seaborn as sns
 import numpy as np
 import pandas as pd
@@ -17,6 +18,9 @@ data.loc[:,['votes']]
 data.drop(['url'], axis=1, inplace=True)
 data.head()
 
+header_names=['Games', 'name', 'url', 'year', 'certificate', 'rating', 'votes', 'plot', 'Action', 'Adventure','Comedy', 'Crime', 'Family', 'Fantasy', 'Mystery', 'Sci-Fi', 'Thriller']
+file=pd.read_csv('https://raw.githubusercontent.com/vpiombi/pythonclase/main/imdb-videogames.csv', header=None, skiprows=1, names=header_names)
 
-fig = px.pie(data, values="Unnamed: 0", names='certificate')
+file = file[file.Games!= 'null']
+fig = px.pie(file, values="Games", names='certificate')
 fig.show()
