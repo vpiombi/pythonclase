@@ -21,13 +21,11 @@ data.head()
 
 #Grafico con año y genero
 
-generoxanio = data[['year', 'Action', 'Adventure', 'Comedy', 'Crime', 'Family', 'Fantasy',
-                    'Mystery', 'Sci-Fi', 'Thriller']].groupby('year').sum()
-generoxanio
+generoxcertificado = data[['certificate', 'Action', 'Adventure', 'Comedy', 'Crime', 'Family', 'Fantasy',
+                    'Mystery', 'Sci-Fi', 'Thriller']].groupby('certificate').sum()
+generoxcertificado
 
 
-generoxanio = generoxanio[generoxanio.index <= 2022]
-
-grafico = px.bar(generoxanio, x=generoxanio.index, y=generoxanio.columns, title='Cantidad de juegos publicados',
+grafico = px.scatter(generoxcertificado, x=generoxcertificado.index, y=generoxcertificado.columns, title='Cantidad de juegos publicados',
              color_discrete_sequence=px.colors.qualitative.Plotly)
 grafico.show()
