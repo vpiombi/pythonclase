@@ -9,8 +9,9 @@ import altair as alt
 data = pd.read_csv('https://raw.githubusercontent.com/vpiombi/pythonclase/main/imdb-videogames.csv')
 
 
-data['votes']= data['votes'].str.replace(',','').astype(float)
+data['votes']= data['votes'].str.replace(',','.').astype(float)
 data['votes'] = data['votes'].round(2)
+
 
 data.loc[:,['votes']]
 
@@ -19,6 +20,10 @@ data.head()
 
 data.info()
 
+data['votes'] = data['votes'].astype(float)
+print(data['votes'])
 
-grafico3 = px.scatter(data,x='rating', y = 'votes', color= "votes",hover_name='name')
+
+
+grafico3 = px.scatter(data,x='rating', y = 'votes', color= "votes",size='votes',  hover_name='name')
 grafico3.show()
