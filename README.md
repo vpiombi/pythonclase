@@ -20,6 +20,10 @@ A continuación, listamos los gráficos que van a poder visualizar al ejecutar e
 
  ![WhatsApp Image 2022-10-28 at 9 15 56 PM](https://user-images.githubusercontent.com/114704675/198759668-f4161b5b-b453-4231-bd23-1d0ab05abc9a.jpeg)
 
+- Grafico de líneas_ categoría y rating: 
+     - En este gráfico podemos ver las distintas categorías de juego teniendo en cuenta la cantidad de juegos que tienen cierto rating(Por ejemplo podemos ver que casi 350 juegos de acción tienen un rating entre 7 y 8 puntos)
+     - ![WhatsApp Image 2022-10-28 at 9 16 27 PM](https://user-images.githubusercontent.com/114704675/198770728-977cb35e-4a3c-4eee-a073-1ec0100faaaf.jpeg)
+
 
 - Diagrama de dispersión: 
 
