@@ -10,7 +10,6 @@ data = pd.read_csv('https://raw.githubusercontent.com/vpiombi/pythonclase/main/i
 
 
 data['votes']= data['votes'].str.replace(',','').astype(float)
-data['votes']= data['votes'].str.replace(',','').astype(np.float)
 data['votes'] = data['votes'].round(2)
 
 data.loc[:,['votes']]
@@ -18,7 +17,13 @@ data.loc[:,['votes']]
 data.drop(['Unnamed: 0', 'url'], axis=1, inplace=True)
 data.head()
 
-data["votes"].fillna(0, inplace = True)
 
-scatter = px.scatter(data,x='rating', y = 'votes', color= "votes",hover_name='name',size = "votes")
-scatter.show()
+#Genero de juegos y raiting
+
+generoxpuntaje = data[['rating', 'Action', 'Adventure', 'Comedy', 'Crime', 'Family', 'Fantasy',
+                    'Mystery', 'Sci-Fi', 'Thriller']].groupby('rating').sum()
+generoxpuntaje
+
+linea = px.line(generoxpuntaje, x=generoxpuntaje.index, y=generoxpuntaje.columns, title='Genero de juegos y rating',
+             color_discrete_sequence=px.colors.qualitative.Plotly)
+linea.show()

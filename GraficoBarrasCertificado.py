@@ -39,6 +39,6 @@ generoxcertificado.drop
 
 
 
-grafico = px.bar(generoxcertificado, x=generoxcertificado.index, y=generoxcertificado.columns, title='Cantidad de juegos por certificado',
+barra2 = px.bar(generoxcertificado, x=generoxcertificado.index, y=generoxcertificado.columns, title='Cantidad de juegos por certificado',
              color_discrete_sequence=px.colors.qualitative.Plotly)
-grafico.show()
+barra2.show()

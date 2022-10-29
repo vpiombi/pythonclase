@@ -28,6 +28,6 @@ generoxanio
 
 generoxanio = generoxanio[generoxanio.index <= 2022]
 
-grafico = px.bar(generoxanio, x=generoxanio.index, y=generoxanio.columns, title='Cantidad de juegos publicados',
+barra1 = px.bar(generoxanio, x=generoxanio.index, y=generoxanio.columns, title='Cantidad de juegos publicados',
              color_discrete_sequence=px.colors.qualitative.Plotly)
-grafico.show()
+barra1.show()
