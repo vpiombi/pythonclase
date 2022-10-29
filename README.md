@@ -1,6 +1,6 @@
 # Proyecto Final de Python _ Grupo 2
 
-Descripción: 
+# Descripción: 
 En nuestro proyecto final utilizamos Python para analizar los datos de un archivo csv, que contiene información acerca de los videojuegos que fueron lanzados entre el año 1962 y 2022. Primero hace una limpieza del dataset y luego transforma los datos necesarios por medio de representaciones gráficas para sacar conclusiones. 
 A continuación, listamos los gráficos que van a poder visualizar al ejecutar el código:
 
@@ -30,3 +30,28 @@ A continuación, listamos los gráficos que van a poder visualizar al ejecutar e
     - En este diagrama de dispersión podemos ver el rating y la cantidad de votos que tuvo cada juego. 
     - Si llevamos el puntero arriba de cada uno de los puntos podemos ver cual es el juego. 
     - También tienen la opción de hacer zoom, para esto una vez que tienen el grafico, seleccione el recuadro y automáticamente van a poder hacer zoom. 
+
+
+![WhatsApp Image 2022-10-28 at 10 12 21 PM](https://user-images.githubusercontent.com/114704675/198771375-ef382e37-dffe-49ff-8d21-c9b4eeeb8ae4.jpeg)
+
+En este diagrama de dispersión podemos ver la relación entre los juegos mejor puntuados y la cantidad de votos. Por ejemplo el GTA V es el juego con más votos y está posicionado bastante alto en el rating
+
+
+# Puntos importantes a tener en cuenta antes de ejecutar el código: 
+
+     1) Al ejecutar los códigos en Visual Studio Code notamos que por momentos el código corría pero no se abría correctamente el gráfico, 
+     por este motivo si esto llega a pasar por favor ejecutar el código en Google Colab, ya que aseguramos que de esta manera el código va 
+     a funcionar correctamente. 
+
+     2) En todos los gráficos excepto el “Word_cloud” tienen la opción de filtrar las variables que quieren ver, haciendo clic en los cuadrados de cada variable, por ejemplo:
+     <img width="430" alt="Capturar" src="https://user-images.githubusercontent.com/114704675/198773045-a0923aa9-ef18-4591-82e1-f034270c25ba.PNG">
+
+     3) En todos los gráficos menos en el pie chart y el Word Cloud pueden hacer zoom en los gráficos para ver las variables con mayor detalle, para esto tienen que:
+          a) Ejecutar el código 
+          b)Una vez que tienen el gráfico, seleccione el recuadro y automáticamente van a poder hacer zoom, por ejemplo: 
+          
+ ![WhatsApp Image 2022-10-28 at 9 24 34 PM](https://user-images.githubusercontent.com/114704675/198773896-154ec927-69dd-408d-960b-386f10dee9db.jpeg)
+
+ ![WhatsApp Image 2022-10-28 at 9 25 00 PM](https://user-images.githubusercontent.com/114704675/198773980-e6f323ea-bec4-4278-a501-4e8bd3d2e0d0.jpeg)
+
+
