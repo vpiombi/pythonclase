@@ -9,6 +9,8 @@ A continuación, listamos los gráficos que van a poder visualizar al ejecutar e
 
   <img width="1087" alt="Capturar" src="https://user-images.githubusercontent.com/114704675/198758177-06f9e458-0450-4f8a-b37e-4f6ecc06f138.PNG">
 
+     Podemos observar que la categoría de juegos que está creciendo más en los últimos años son los de Acción y de Aventura
+
 
 - Bar_Graphic_Certificate.py: 
     -En este gráfico de barras podemos ver que certificado tiene cada juego con su respectiva categoría:
@@ -35,6 +37,47 @@ A continuación, listamos los gráficos que van a poder visualizar al ejecutar e
 ![WhatsApp Image 2022-10-28 at 10 12 21 PM](https://user-images.githubusercontent.com/114704675/198771375-ef382e37-dffe-49ff-8d21-c9b4eeeb8ae4.jpeg)
 
 En este diagrama de dispersión podemos ver la relación entre los juegos mejor puntuados y la cantidad de votos. Por ejemplo el GTA V es el juego con más votos y está posicionado bastante alto en el rating
+
+- Word_Cloud_Year.py 
+     - En este gráfico Word Cloud pueden ver las palabras que más se usaron en los reviews que dejaron los usuarios de los juegos que fueron lanzados en los respectivos años. 
+
+ 1) 1960-1980: En el primer gráfico podemos ver las palabras que más usaron en los comentarios de los juegos que fueron lanzados entre los años 1960 y 1980
+
+![wordcloud_year_output1960_1980](https://user-images.githubusercontent.com/114704675/198777519-a2987660-154a-4a36-a3fd-eb893995b216.png)
+
+Si lo comparamos con el gráfico de barras de cantidad de juegos publicados (el gráfico 1) podemos ver que los juegos más vendidos en los entre los años 1960 y 1980 fueron de accion, Sci-Fi y Family. 
+
+<img width="1087" alt="Capturar" src="https://user-images.githubusercontent.com/114704675/198758177-06f9e458-0450-4f8a-b37e-4f6ecc06f138.PNG">
+
+Esto lo podemos ver reflejado en el word cloud porque algunas de las palabras más usadas en los reviews de los juegos lanzados en ese año fueron:
+- Maze
+- Control
+- Space
+- Arcade
+
+ 2) 1980-2000: En el segundo gráfico podemos ver las palabras que más usaron en los comentarios de los juegos que fueron lanzados entre los años 1980 y 2000.
+
+![wordcloud_year_output1980_2000](https://user-images.githubusercontent.com/114704675/198778249-b9c75dd6-8ed0-4f93-9c8e-1f9fa1813c0c.png)
+
+Si lo comparamos con el gráfico de barras de cantidad de juegos publicados (el gráfico 1) podemos ver que los juegos más vendidos en los entre los años 1980 y 2000 fueron de aventura y acción. Esto lo podemos ver reflejado en el word cloud porque algunas de las palabras más usadas en los reviews de los juegos lanzados en ese año fueron:
+- World
+- Evil
+- Adventure
+- Alien
+- Fight
+
+ 3) 2000-2022: En el tercer gráfico podemos ver las palabras que más usaron en los comentarios de los juegos que fueron lanzados entre los años 2000 y 2022.
+ 
+ ![wordcloud_year_output2000_2022](https://user-images.githubusercontent.com/114704675/198778658-1de515e4-a139-4551-b4ee-3455aca85760.png)
+
+  Si lo comparamos con el gráfico de barras de cantidad de juegos publicados (el gráfico 1) podemos ver que los juegos más vendidos en los entre los años 2002 y 2022 fueron de aventura y acción. Esto lo podemos ver reflejado en el word cloud porque algunas de las palabras más usadas en los reviews de los juegos lanzados en ese año fueron:
+- World
+- Fight
+- Battle
+- Story
+- Adventure
+
+ 
 
 
 # Puntos importantes a tener en cuenta antes de ejecutar el código: 
