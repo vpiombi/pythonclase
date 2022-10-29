@@ -19,5 +19,5 @@ data.head()
 
 data["votes"].fillna(0, inplace = True)
 
-grafico3 = px.scatter(data,x='rating', y = 'votes', color= "votes",hover_name='name',size = "votes")
-grafico3.show()
+scatter = px.scatter(data,x='rating', y = 'votes', color= "votes",hover_name='name',size = "votes")
+scatter.show()

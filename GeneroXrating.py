@@ -8,7 +8,6 @@ import altair as alt
 
 data = pd.read_csv('https://raw.githubusercontent.com/vpiombi/pythonclase/main/imdb-videogames.csv')
 
-data.info()
 
 data['votes']= data['votes'].str.replace(',','').astype(float)
 data['votes'] = data['votes'].round(2)
@@ -19,15 +18,12 @@ data.drop(['Unnamed: 0', 'url'], axis=1, inplace=True)
 data.head()
 
 
-#Grafico con año y genero
+#Genero de juegos y raiting
 
-generoxanio = data[['year', 'Action', 'Adventure', 'Comedy', 'Crime', 'Family', 'Fantasy',
-                    'Mystery', 'Sci-Fi', 'Thriller']].groupby('year').sum()
-generoxanio
+generoxpuntaje = data[['rating', 'Action', 'Adventure', 'Comedy', 'Crime', 'Family', 'Fantasy',
+                    'Mystery', 'Sci-Fi', 'Thriller']].groupby('rating').sum()
+generoxpuntaje
 
-
-generoxanio = generoxanio[generoxanio.index <= 2022]
-
-barra1 = px.bar(generoxanio, x=generoxanio.index, y=generoxanio.columns, title='Cantidad de juegos publicados',
+linea = px.line(generoxpuntaje, x=generoxpuntaje.index, y=generoxpuntaje.columns, title='Genero de juegos y rating',
              color_discrete_sequence=px.colors.qualitative.Plotly)
-barra1.show()
+linea.show()
