@@ -41,6 +41,15 @@ data['plot']= data['plot'].str.replace('based','').astype(np.object)
 data['plot']= data['plot'].str.replace('play','').astype(np.object)
 data['plot']= data['plot'].str.replace('save','').astype(np.object)
 data['plot']= data['plot'].str.replace('new','').astype(np.object)
+data['plot']= data['plot'].str.replace('stop','').astype(np.object)
+data['plot']= data['plot'].str.replace('series','').astype(np.object)
+data['plot']= data['plot'].str.replace('play','').astype(np.object)
+data['plot']= data['plot'].str.replace('time','').astype(np.object)
+data['plot']= data['plot'].str.replace('player','').astype(np.object)
+
+
+
+
 
 
 
