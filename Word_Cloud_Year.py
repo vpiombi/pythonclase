@@ -35,6 +35,14 @@ data['plot']= data['plot'].str.replace('summary','').astype(np.object)
 data['plot']= data['plot'].str.replace('Player','').astype(np.object)
 data['plot']= data['plot'].str.replace('player','').astype(np.object)
 data['plot']= data['plot'].str.replace('game','').astype(np.object)
+data['plot']= data['plot'].str.replace('video','').astype(np.object)
+data['plot']= data['plot'].str.replace('must','').astype(np.object)
+data['plot']= data['plot'].str.replace('based','').astype(np.object)
+data['plot']= data['plot'].str.replace('play','').astype(np.object)
+data['plot']= data['plot'].str.replace('save','').astype(np.object)
+data['plot']= data['plot'].str.replace('new','').astype(np.object)
+
+
 
 
 
