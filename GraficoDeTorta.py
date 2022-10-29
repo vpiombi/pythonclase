@@ -21,6 +21,8 @@ data.head()
 header_names=['Games', 'name', 'url', 'year', 'certificate', 'rating', 'votes', 'plot', 'Action', 'Adventure','Comedy', 'Crime', 'Family', 'Fantasy', 'Mystery', 'Sci-Fi', 'Thriller']
 file=pd.read_csv('https://raw.githubusercontent.com/vpiombi/pythonclase/main/imdb-videogames.csv', header=None, skiprows=1, names=header_names)
 
-file = file[file.Games!= 'null']
+
+file.drop(file[(file['Games' ==NULL]) ].index)
+
 fig = px.pie(file, values="Games", names='certificate')
 fig.show()
